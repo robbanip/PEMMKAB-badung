@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Absensi Online</title>
+		
+		<!--JQUERY -->
+		<link rel="stylesheet" href="js-lib/jquery.signature.css" />
+        <script src="js-lib/jquery.min.js" type="text/javascript" ></script>
+        <script src="js-lib/jquery-ui.min.js" type="text/javascript" > </script>
+        <script src="js-lib/jquery.signature.js" type="text/javascript" ></script>
+        
+        <style>
+            .kbw-signature{
+                height: 200px;
+                width: 300px;
+            }
+        </style>
+        
+        <script>
+            $(function(){
+                $('#tandatangan').signature({guideline: true});       
+            });
+        </script>
+
+    </head>
+    <body><Center>
+    	<h1><center>Absensi ONLINE</h1>
+    		Nama : 
+    	<br>
+    	<input type="text" id="nama">
+    	<br>
+    	<br>
+    		Instansi : 
+    	<br>
+    	<input type="text" id="instansi">
+    	<br>
+    	<br>
+    		Keperluan : 
+    	<br>
+    	<input type="text" id="keperluan">
+    	<br>
+    	<br>
+    		Jumlah Anggota : 
+    	<br>
+    	<input type="text" id="jmlAnggota">
+    	<br>
+    	<br>
+    		Tanda Tangan :
+    	<br>
+    	<div id="tandatangan"></div>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
